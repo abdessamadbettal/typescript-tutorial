@@ -9,7 +9,7 @@ let arr: any[] = [1, true, 'Hello'];
 let person: [number, string, boolean] = [1, 'Brad', true];
 
 // Tuple Array
-let employee: [number, string][];
+let employee: [number, string][]; // this means that employee is an array of tuples
 
 employee = [
     [1, 'Brad'],
@@ -18,7 +18,7 @@ employee = [
 ];
 
 // Union
-let pid: string | number = 22;
+let pid: string | number = 22; // this means pid can be a string or a number
 pid = '22';
 
 // Enum
@@ -50,7 +50,30 @@ const user: User = {
 // Type Assertion
 let cid: any = 1;
 // let customerId = <number>cid;
-let customerId = cid as number;
+let customerId = cid as number; // same as <number>cid
+
+// Functions
+function addNum(x: number, y: number): number { // number => return number
+    return x + y;
+}
+
+// Void
+function log(message: string | number): void { // void => return nothing
+    console.log(message);
+}
+
+// Interfaces
+interface UserInterface {
+    readonly id: number, // readonly => can't change the value
+    name: string, 
+    age?: number, // ? => optional
+}
+
+const user1: UserInterface = {
+    id: 1,
+    name: 'John',
+}
+
 
 
 

@@ -8,14 +8,14 @@ let arr = [1, true, 'Hello'];
 // Tuple
 let person = [1, 'Brad', true];
 // Tuple Array
-let employee;
+let employee; // this means that employee is an array of tuples
 employee = [
     [1, 'Brad'],
     [2, 'John'],
     [3, 'Jill'],
 ];
 // Union
-let pid = 22;
+let pid = 22; // this means pid can be a string or a number
 pid = '22';
 // Enum
 var Direction1;
@@ -39,4 +39,16 @@ const user = {
 // Type Assertion
 let cid = 1;
 // let customerId = <number>cid;
-let customerId = cid;
+let customerId = cid; // same as <number>cid
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
+// Void
+function log(message) {
+    console.log(message);
+}
+const user1 = {
+    id: 1,
+    name: 'John',
+};
