@@ -52,3 +52,13 @@ const user1 = {
     id: 1,
     name: 'John',
 };
+const add = (x, y) => x + y; // this means that add is a function that takes two numbers and return a number
+const sub = (x, y) => x - y; // this means that sub is a function that takes two numbers and return a number
+// Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+const brad = new Person(1, 'Abdessamad bettal');

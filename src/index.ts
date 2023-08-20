@@ -74,6 +74,27 @@ const user1: UserInterface = {
     name: 'John',
 }
 
+// Interface with functions
+interface MathFunc {
+    (x: number, y: number): number,
+} // this means that MathFunc is a function that takes two numbers and return a number
+
+const add: MathFunc = (x: number, y: number): number => x + y; // this means that add is a function that takes two numbers and return a number
+const sub: MathFunc = (x: number, y: number): number => x - y; // this means that sub is a function that takes two numbers and return a number
+
+// Classes
+class Person {
+    id: number;
+    name: string;
+
+    constructor(id: number, name: string) { // constructor is a function that runs when we instantiate an object from a class
+        this.id = id;
+        this.name = name;
+    }
+}
+
+const brad = new Person(1, 'Abdessamad bettal');
+
 
 
 
